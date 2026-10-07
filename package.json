@@ -1,0 +1,1 @@
+{"name":"frezzennio-v4","version":"4.0.0","private":true,"scripts":{"start":"node server.js","init-db":"node init-db.js"},"dependencies":{"better-sqlite3":"^11.7.0","bcryptjs":"^2.4.3","express":"^4.21.2","express-session":"^1.18.1","helmet":"^8.0.0"}}

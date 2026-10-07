@@ -1,0 +1,14 @@
+services:
+  frezzennio:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      PORT: 3000
+      SESSION_SECRET: ${SESSION_SECRET:-cambie-este-secreto}
+      ADMIN_USER: ${ADMIN_USER:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Cambiar123!}
+      DB_FILE: /data/frezzennio.db
+    volumes:
+      - frezzennio_data:/data
+volumes:
+  frezzennio_data:
