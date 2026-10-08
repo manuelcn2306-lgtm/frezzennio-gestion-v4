@@ -5,4 +5,4 @@ RUN npm install --omit=dev
 COPY . .
 RUN node init-db.js
 EXPOSE 3000
-CMD CMD ["sh","-c","node init-db.js && node server.js"]
+CMD ["sh","-c","node init-db.js && node server.js"]
